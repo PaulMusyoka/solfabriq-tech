@@ -1,133 +1,94 @@
 :root {
-    --primary-green: #059669;
-    --solar-gold: #fbce07;
-    --deep-bg: #06120e;
-    --glass: rgba(255, 255, 255, 0.05);
-    --text-light: #f1f5f9;
+    --sun-gold: #fbbf24;
+    --forest-green: #065f46;
+    --deep-bg: #0f172a;
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--deep-bg);
-    color: var(--text-light);
-    line-height: 1.6;
-    overflow-x: hidden;
+    margin: 0;
+    font-family: Arial;
+    background: var(--deep-bg);
+    color: white;
 }
 
-h1, h2, .brand-text { font-family: 'Orbitron', sans-serif; }
-
-/* Navigation - Modern Buttons */
-nav {
-    background: rgba(6, 18, 14, 0.95);
-    padding: 15px 5%;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(5, 150, 105, 0.3);
-}
-
-.nav-container {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
+    background: #020617;
+    padding: 20px;
 }
 
-.logo-main { height: 50px; margin-right: 15px; vertical-align: middle; }
-
-.nav-menu { display: flex; gap: 15px; }
-
-.nav-btn {
-    text-decoration: none;
-    color: var(--text-light);
-    padding: 8px 20px;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: 0.3s;
-    border: 1px solid transparent;
-}
-
-.nav-btn:hover { background: var(--glass); border-color: var(--primary-green); }
-
-.btn-cta { background: var(--primary-green); color: white; }
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background: url('solar.jpg') center/cover no-repeat;
+.logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, rgba(6,18,14,0.4), var(--deep-bg));
+.logo img {
+    width: 40px;
+    margin-right: 10px;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 10;
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--sun-gold);
+}
+
+.hero {
     text-align: center;
-    max-width: 800px;
+    padding: 80px;
+    background: #1e293b;
 }
 
-.hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; color: var(--solar-gold); }
-
-.donation-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 20px;
-    margin-top: 40px;
-    border: 1px solid rgba(251, 206, 7, 0.3);
+section {
+    padding: 50px;
 }
 
-.paypal-premium-btn {
-    background: var(--solar-gold);
-    color: #000;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.full-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: var(--sun-gold);
+    padding: 10px;
     border: none;
-    padding: 18px 40px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 0 20px rgba(251, 206, 7, 0.4);
-    transition: transform 0.2s;
 }
 
-.paypal-premium-btn:hover { transform: scale(1.05); }
-
-/* Projects Section */
-.glass-section { padding: 100px 5%; background: var(--deep-bg); }
-.project-display {
-    display: flex;
-    background: var(--glass);
-    border-radius: 30px;
-    overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.1);
-}
-
-.project-image-container { flex: 1; }
-.featured-img { width: 100%; height: 100%; object-fit: cover; }
-.project-details { flex: 1; padding: 50px; }
-
-.tag { color: var(--solar-gold); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
-
-footer {
-    padding: 60px;
-    text-align: center;
-    border-top: 1px solid var(--glass);
-}
-
-@media (max-width: 768px) {
-    .nav-menu { display: none; } /* Mobile optimization needed later */
-    .project-display { flex-direction: column; }
-    .hero-content h1 { font-size: 2.2rem; }
+.donate-btn {
+    display: inline-block;
+    background: green;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
