@@ -3,69 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolFabriQ Tech | Engineering Solutions</title>
+    <title>SolFabriQ Tech | Powering Green Innovation</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <div class="nav-container">
         <img src="logo.png" alt="SolFabriQ Logo" class="logo-img">
-        <span class="brand-name">SolFabriQ Tech</span>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#partners">Partners & Donors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
 </nav>
 
-<header class="hero">
+<header id="home" class="hero">
     <div class="hero-content">
-        <h1>Engineering the Future of Power</h1>
-        <p>Specializing in Off-Grid Solar, Industrial Automation, and Mechanical Innovation.</p>
-        <a href="#contact" class="btn">Get a Technical Quote</a>
+        <h1>Renewable Energy for a Sustainable Future</h1>
+        <p>SolFabriQ Tech: Engineering the transition to green power in Makueni and beyond.</p>
+        <div class="paypal-container">
+            <p>Support our Green Initiative:</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="business" value="mupamwa@gmail.com" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <button type="submit" class="paypal-btn">Donate via PayPal 💳</button>
+            </form>
+        </div>
     </div>
 </header>
 
-<section class="services">
-    <div class="section-title">
-        <h2>Core Capabilities</h2>
-    </div>
-    <div class="service-grid">
-        <div class="card">
-            <img src="solar.jpg" alt="Solar Project" class="card-img">
-            <h3>Solar Power Systems</h3>
-            <p>Design and commissioning of 3kW+ off-grid systems with lithium storage.</p>
-        </div>
-        <div class="card">
-            <div class="icon">🏭</div>
-            <h3>Industrial Maintenance</h3>
-            <p>Expert mechanical fabrication and preventive maintenance for large-scale plants.</p>
-        </div>
-        <div class="card">
-            <div class="icon">🤖</div>
-            <h3>Smart Automation</h3>
-            <p>Integrating IoT and PLC systems for optimized manufacturing workflows.</p>
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Our Engineering Projects</h2>
+        <div class="project-card">
+            <img src="solar.jpg" alt="Solar Installation" class="project-img">
+            <div class="project-info">
+                <h3>3kW Off-Grid Solar Deployment</h3>
+                <p>A high-efficiency lithium-storage system designed for reliable power in remote areas. This project showcases our ability to design, install, and commission complete green energy solutions.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="contact-section">
-    <div class="contact-card">
-        <h2>Start a Project</h2>
-        <form action="#">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <select>
-                <option>Solar Power Design</option>
-                <option>Industrial Consultation</option>
-                <option>General Inquiry</option>
-            </select>
-            <textarea placeholder="Describe your technical requirements..."></textarea>
-            <button type="submit" class="btn-submit">Submit Request</button>
-        </form>
+<section id="partners" class="section alt-bg">
+    <div class="container">
+        <h2>Partners & Donors</h2>
+        <p>We are seeking collaborations with organizations committed to SDGs and carbon footprint reduction. Your support helps us scale local engineering talent and green infrastructure.</p>
+        <div class="cta-box">
+            <h3>Interested in Partnering?</h3>
+            <p>We invite donors and technical partners to join our mission of industrializing green energy.</p>
+            <a href="#contact" class="btn">Request Partnership Proposal</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p>📍 Salama Makueni, Kenya</p>
+                <p>📧 solfabriqtech@gmail.com</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Organization/Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="How can we collaborate?"></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 SolFabriQ Tech | Salama Makueni, Kenya</p>
+    <p>&copy; 2026 SolFabriQ Tech | Engineering for the Earth 🌍</p>
 </footer>
 
 </body>
