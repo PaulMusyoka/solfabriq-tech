@@ -3,85 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolFabriQ Tech | Powering Green Innovation</title>
+    <title>SolFabriQ Tech | Leading Green Energy Innovation</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
     <div class="nav-container">
-        <img src="logo.png" alt="SolFabriQ Logo" class="logo-img">
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#partners">Partners & Donors</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="brand">
+            <img src="logo.png" alt="SolFabriQ Logo" class="logo-main">
+            <span class="brand-text">SolFabriQ <span class="tech-highlight">Tech</span></span>
+        </div>
+        <div class="nav-menu">
+            <a href="#home" class="nav-btn">Home</a>
+            <a href="#projects" class="nav-btn">Projects</a>
+            <a href="#partners" class="nav-btn">Partners</a>
+            <a href="#contact" class="nav-btn btn-cta">Contact Us</a>
+        </div>
     </div>
 </nav>
 
-<header id="home" class="hero">
+<section id="home" class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-        <h1>Renewable Energy for a Sustainable Future</h1>
-        <p>SolFabriQ Tech: Engineering the transition to green power in Makueni and beyond.</p>
-        <div class="paypal-container">
-            <p>Support our Green Initiative:</p>
+        <h1 class="glitch">Engineering the Green Revolution</h1>
+        <p>Advanced Off-Grid Solutions & Industrial Innovation based in Salama Makueni.</p>
+        
+        <div class="donation-card">
+            <h3>Support SolFabriQ Tech Initiatives</h3>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="mupamwa@gmail.com" />
+                <input type="hidden" name="item_name" value="Donation to SolFabriQ Tech Green Energy Fund" />
                 <input type="hidden" name="currency_code" value="USD" />
-                <button type="submit" class="paypal-btn">Donate via PayPal 💳</button>
+                <button type="submit" class="paypal-premium-btn">Donate to SolFabriQ Tech</button>
             </form>
         </div>
     </div>
-</header>
+</section>
 
-<section id="projects" class="section">
+<section id="projects" class="glass-section">
     <div class="container">
-        <h2>Our Engineering Projects</h2>
-        <div class="project-card">
-            <img src="solar.jpg" alt="Solar Installation" class="project-img">
-            <div class="project-info">
-                <h3>3kW Off-Grid Solar Deployment</h3>
-                <p>A high-efficiency lithium-storage system designed for reliable power in remote areas. This project showcases our ability to design, install, and commission complete green energy solutions.</p>
+        <h2 class="section-title">Technical Showcase</h2>
+        <div class="project-display">
+            <div class="project-image-container">
+                <img src="solar.jpg" alt="3kW Solar Project" class="featured-img">
+            </div>
+            <div class="project-details">
+                <span class="tag">Flagship Project</span>
+                <h3>3kW Off-Grid Solar Mastery</h3>
+                <p>Complete design, fabrication, and commissioning of a lithium-powered system. Engineered for high-uptime industrial and domestic reliability.</p>
+                <div class="stats">
+                    <div class="stat-item"><strong>100%</strong> <span>Green</span></div>
+                    <div class="stat-item"><strong>3kW</strong> <span>Capacity</span></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="partners" class="section alt-bg">
-    <div class="container">
+<section id="partners" class="partners-section">
+    <div class="container text-center">
         <h2>Partners & Donors</h2>
-        <p>We are seeking collaborations with organizations committed to SDGs and carbon footprint reduction. Your support helps us scale local engineering talent and green infrastructure.</p>
-        <div class="cta-box">
-            <h3>Interested in Partnering?</h3>
-            <p>We invite donors and technical partners to join our mission of industrializing green energy.</p>
-            <a href="#contact" class="btn">Request Partnership Proposal</a>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <div class="contact-grid">
-            <div class="contact-info">
-                <p>📍 Salama Makueni, Kenya</p>
-                <p>📧 solfabriqtech@gmail.com</p>
-            </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Organization/Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="How can we collaborate?"></textarea>
-                <button type="submit" class="btn-submit">Send Message</button>
-            </form>
+        <p class="sub-text">Join us in localizing high-end engineering for a sustainable Africa.</p>
+        <div class="partner-cta">
+            <p>We are actively seeking technical collaborators and visionaries.</p>
+            <a href="mailto:mupamwa@gmail.com" class="outline-btn">Inquire for Partnership</a>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 SolFabriQ Tech | Engineering for the Earth 🌍</p>
+    <div class="footer-content">
+        <p>&copy; 2026 SolFabriQ Tech | Makueni, Kenya</p>
+        <p class="footer-email">mupamwa@gmail.com</p>
+    </div>
 </footer>
 
 </body>
